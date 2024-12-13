@@ -5,7 +5,9 @@ author_name: "Nitin Kedia"
 
 markdown: kramdown
 ins_logo: #
-# ins_logo: "/uw.png"
+
+favicon: true
+favicon_location: "assets/favicon.svg"
 
 tracking_id: #
 
@@ -18,11 +20,6 @@ footer_ill_cred_text": "Yi Yi illustration at the bottom right by Anna Vignet."
 sass:
     style: compressed
     sass_dir: _sass
-
-collections:
-  publications:
-    output: false
-    permalink: :collection/:name
 
 nav:
  - name: "About"

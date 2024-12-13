@@ -11,14 +11,10 @@ html {
 }
 body {
   margin: 0;
-  // font-family: "Inconsolata";
-  // font-family: "Inter";
-  // font-family: "Open Sans";
-  // font-family: "Nunito";
   font-family: "Alegreya Sans", sans-serif;
   font-style: normal;
   font-weight: 300;
-  height: 100%;
+  // height: 100%;
 }
 
 a {
@@ -88,6 +84,24 @@ hr {
   display: block;
   max-height: 50px;
   text-align: center;
+}
+
+.profile-picture {
+  height: $image-size;
+  width: $image-size;
+  position: relative;
+  margin: -10px 0 0 15px;
+  float: right;
+  border-radius: 50%;
+  p & {
+    padding: 0;
+    margin: 0;
+  }
+  @media (max-width: $small-width) {
+    img {
+      margin-top: -5px;
+    }
+  }
 }
 
 /* Mobile */
@@ -162,4 +176,3 @@ hr {
   font-size: 1.2em;
 }
 
-@import "typography";

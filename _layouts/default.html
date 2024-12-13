@@ -1,14 +1,4 @@
 <!DOCTYPE html>
-<link rel="preconnect" href="https://rsms.me/">
-<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-<link
-    href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Inconsolata:wght@200..900&family=Nunito:ital,wght@0,300;1,300&family=Raleway:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap"
-    rel="stylesheet">
 <html lang="en">
 
 <head>
@@ -32,37 +22,17 @@
     {% assign url = site.url | append: site.baseurl | append: page.url %}
     {% endif %}
     <meta name="description" content="{{ desc }}">
-    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS" href="/feed.xml" />
     <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
     {% if site.favicon %}
     <link rel="icon" type="image/ico" href="{{ site.favicon_location }}">
     <link rel="shortcut-icon" type="image/ico" href="{{ site.favicon_location }}">
     {% endif %}
-    {% if site.twitter_username %}
-    <link rel="author" href="https://twitter.com/{{ site.twitter_username }}">
-    {% endif %}
-    <!-- Facebook Open Graph -->
-    <meta name="og:description" content="{{ desc }}">
-    <meta name="og:title" content="{{ site.title }}">
-    <meta name="og:url" content="{{ url }}">
-    <meta name="og:type" content="article">
-    {% if site.og_image %}
-    <meta name="og:image" content="{{ site.og_image }}">
-    {% endif %}
-    {% if site.facebook_id %}
-    <meta name="fb:admins" content="{{ site.facebook_id }}">
-    {% endif %}
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="{{ site.title }}">
-    <meta name="twitter:description" content="{{ desc }}">
-    <meta name="twitter:url" content="{{ url }}">
-    {% if site.twitter_image %}
-    <meta name="twitter:image" content="{{ site.twitter_image }}">
-    {% else %}
-    <meta name="twitter:image" content="{{ site.profile_picture }}">
-    {% endif %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 </head>
 
 <body>
@@ -91,26 +61,11 @@
         <hr>
         {% if page.is_contact == true %}
         <div class="container content contact">
-            {% else %}
-            <div class="container content">
-                {% endif %}
-                {{ content }}
-                {% if site.footer == true %}
-                <hr />
-                <div class="social-icons">
-                    <a href="mailto:nitinkedia7@gmail.com" target="_blank"><i class="fas fa-envelope ai-lg"></i></a>
-                    <a href="https://scholar.google.com/citations?user=MEO4kT0AAAAJ&hl=en" target="_blank"><i
-                            class="ai ai-google-scholar ai-lg"></i></a>
-                    <a href="https://github.com/nitinkedia7target=" _blank><i class="fab fa-github ai-lg"></i></a>
-                    <a href="https://x.com/nitinkedi" target="_blank"><i class="fab fa-twitter ai-lg"></i></a>
-                </div>
-                <p style="text-align: center; margin-bottom: 10px">
-                    <a href="{{ site.footer_theme_cred_url }}" style="color: black"><small>{{
-                            site.footer_theme_cred_text }}</small></a> <a href="https://www.annavignet.com/"
-                        style="color: black"><small>Yi Yi illustration at the bottom right by Anna Vignet.</small></a>
-                </p>
-                {% endif %}
-            </div>
+        {% else %}
+        <div class="container content">
+        {% endif %}
+        {{ content }}
+        </div>
         </div>
         {% if site.tracking_id %}
         <script>
@@ -124,15 +79,23 @@
             ga('send', 'pageview');
         </script>
         {% endif %}
-</body>
-
-
-
-<!-- <a href="https://www.annavignet.com/" target="_blank"> -->
-<img src="{{ '/assets/yiyi.png' | relative_url }}" alt="Description of the image"
-    style="position: fixed; bottom: 0; right: 0; width: 80px; height: auto;">
-<!-- </a> -->
-
-<footer>
-
-</footer>
+        <footer>
+            {% if site.footer == true %}
+            <hr />
+            <div class="social-icons">
+                <a href="mailto:nitinkedia7@gmail.com" target="_blank"><i class="fas fa-envelope ai-lg"></i></a>
+                <a href="https://scholar.google.com/citations?user=MEO4kT0AAAAJ&hl=en" target="_blank"><i
+                        class="ai ai-google-scholar ai-lg"></i></a>
+                <a href="https://github.com/nitinkedia7target=" _blank><i class="fab fa-github ai-lg"></i></a>
+                <a href="https://x.com/nitinkedi" target="_blank"><i class="fab fa-twitter ai-lg"></i></a>
+            </div>
+            <p style="text-align: center; margin-bottom: 10px">
+                <a href="{{ site.footer_theme_cred_url }}" style="color: black"><small>{{
+                        site.footer_theme_cred_text }}</small></a> <a href="https://www.annavignet.com/"
+                    style="color: black"><small>Yi Yi illustration at the bottom right by Anna Vignet.</small></a>
+            </p>
+            {% endif %}
+            <img src="{{ '/assets/yiyi.png' | relative_url }}" alt="Description of the image" style="position: fixed; bottom: 0; right: 0; width: 80px; height: auto;">
+        </footer>
+    </body>
+</html>
