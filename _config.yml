@@ -1,0 +1,31 @@
+title: Nitin Kedia
+url: "https://kedianitin.com"
+baseurl: ""
+author_name: "Nitin Kedia"
+
+markdown: kramdown
+ins_logo: #
+# ins_logo: "/uw.png"
+
+tracking_id: #
+
+footer: yes
+footer_theme_cred_url: "https://github.com/ankitsultana"
+footer_theme_cred_text: "Theme by Ankit Sultana."
+footer_ill_cred_url: "https://www.annavignet.com/"
+footer_ill_cred_text": "Yi Yi illustration at the bottom right by Anna Vignet."
+
+sass:
+    style: compressed
+    sass_dir: _sass
+
+collections:
+  publications:
+    output: false
+    permalink: :collection/:name
+
+nav:
+ - name: "About"
+   link: "/"
+ - name: "Resume"
+   link: "/assets/resume.pdf"
