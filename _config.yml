@@ -7,7 +7,7 @@ markdown: kramdown
 ins_logo: #
 
 favicon: true
-favicon_location: "assets/favicon.svg"
+favicon_location: "assets/favicon/favicon.ico"
 
 tracking_id: #
 
@@ -24,5 +24,5 @@ sass:
 nav:
  - name: "About"
    link: "/"
- - name: "Resume"
-   link: "/assets/resume.pdf"
+ - name: "CV"
+   link: "/assets/cv.pdf"
