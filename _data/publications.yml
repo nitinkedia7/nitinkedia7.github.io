@@ -1,16 +1,6 @@
-- title: "Etalon: Holistic Performance Evaluation Framework for LLM Inference Systems"
-  authors: Amey Agrawal, Anmol Agarwal, <u>Nitin Kedia</u>, Jayashree Mohan, Souvik Kundu, Nipun Kwatra, Ramachandran Ramjee, Alexey Tumanov
-  date: 08-30-2024
-  url: https://arxiv.org/abs/2407.07000
-  type: preprint
-  abs: https://arxiv.org/abs/2407.07000
-  pdf: https://arxiv.org/abs/2407.07000/pdf
-  code: https://github.com/project-etalon/etalon
-  order: 3
-
 - title: "Taming Throughput-Latency Tradeoff in LLM Inference with Sarathi-Serve"
   authors: Amey Agrawal, <u>Nitin Kedia</u>, Ashish Panwar, Jayashree Mohan, Nipun Kwatra, Bhargav S. Gulavani, Alexey Tumanov, and Ramachandran Ramjee
-  venue: OSDI’24 (The 18th USENIX Symposium on Operating Systems Design and Implementation)
+  venue: OSDI’24
   venue_type: Conference
   date: 07-13-2024
   url: https://www.usenix.org/conference/osdi24/presentation/agrawal
@@ -20,8 +10,8 @@
   order: 1
 
 - title: "Vidur: A Large Scale Simulation Framework For LLM Inference"
-  authors: Amey Agrawal, <u>Nitin Kedia</u>, Jayashree Mohan, Ashish Panwar, Nipun Kwatra, Bhargav S. Gulavani, Ramachandran Ramjee, Alexey Tumanov
-  venue: MLSys’24 (The 7th Annual Conference on Machine Learning And Systems)
+  authors: Amey Agrawal, <u>Nitin Kedia</u>, Jayashree Mohan, Ashish Panwar, Nipun Kwatra, Bhargav S. Gulavani, Ramachandran Ramjee, and Alexey Tumanov
+  venue: MLSys’24
   venue_type: Conference
   date: 05-10-2024
   url: https://proceedings.mlsys.org/paper_files/paper/2024/hash/b74a8de47d2b3c928360e0a011f48351-Abstract-Conference.html
@@ -29,3 +19,11 @@
   pdf: https://proceedings.mlsys.org/paper_files/paper/2024/file/b74a8de47d2b3c928360e0a011f48351-Paper-Conference.pdf
   code: https://github.com/microsoft/vidur
   order: 2
+
+- title: "On Evaluating Performance of LLM Inference Serving Systems"
+  authors: Amey Agrawal, <u>Nitin Kedia</u>, Anmol Agarwal, Jayashree Mohan, Nipun Kwatra, Souvik Kundu, Ramachandran Ramjee, and Alexey Tumanov
+  date: 07-11-2025
+  url: https://arxiv.org/abs/2507.09019
+  type: preprint
+  pdf: https://arxiv.org/abs/2507.09019/pdf
+  order: 3
