@@ -1,3 +1,19 @@
+- title: "Nalar: An agent serving framework"
+  authors: Marco Laju, Donghyun Son, Saurabh Agarwal, <u>Nitin Kedia</u>, Myungjin Lee, Jayanth Srinivasa, Aditya Akella
+  date: 08-01-2026
+  url: https://arxiv.org/abs/2601.05109
+  type: preprint
+  pdf: https://arxiv.org/abs/2601.05109/pdf
+  order: 1
+
+- title: "On Evaluating Performance of LLM Inference Serving Systems"
+  authors: Amey Agrawal, <u>Nitin Kedia</u>, Anmol Agarwal, Jayashree Mohan, Nipun Kwatra, Souvik Kundu, Ramachandran Ramjee, and Alexey Tumanov
+  date: 07-11-2025
+  url: https://arxiv.org/abs/2507.09019
+  type: preprint
+  pdf: https://arxiv.org/abs/2507.09019/pdf
+  order: 2
+
 - title: "Taming Throughput-Latency Tradeoff in LLM Inference with Sarathi-Serve"
   authors: Amey Agrawal, <u>Nitin Kedia</u>, Ashish Panwar, Jayashree Mohan, Nipun Kwatra, Bhargav S. Gulavani, Alexey Tumanov, and Ramachandran Ramjee
   venue: OSDI’24
@@ -7,7 +23,7 @@
   type: published
   pdf: https://www.usenix.org/system/files/osdi24-agrawal.pdf
   code: https://github.com/microsoft/sarathi-serve
-  order: 1
+  order: 3
 
 - title: "Vidur: A Large Scale Simulation Framework For LLM Inference"
   authors: Amey Agrawal, <u>Nitin Kedia</u>, Jayashree Mohan, Ashish Panwar, Nipun Kwatra, Bhargav S. Gulavani, Ramachandran Ramjee, and Alexey Tumanov
@@ -18,12 +34,4 @@
   type: published
   pdf: https://proceedings.mlsys.org/paper_files/paper/2024/file/b74a8de47d2b3c928360e0a011f48351-Paper-Conference.pdf
   code: https://github.com/microsoft/vidur
-  order: 2
-
-- title: "On Evaluating Performance of LLM Inference Serving Systems"
-  authors: Amey Agrawal, <u>Nitin Kedia</u>, Anmol Agarwal, Jayashree Mohan, Nipun Kwatra, Souvik Kundu, Ramachandran Ramjee, and Alexey Tumanov
-  date: 07-11-2025
-  url: https://arxiv.org/abs/2507.09019
-  type: preprint
-  pdf: https://arxiv.org/abs/2507.09019/pdf
-  order: 3
+  order: 4
