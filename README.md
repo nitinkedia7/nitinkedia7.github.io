@@ -4,6 +4,28 @@
 
 A clean, single column, monospace resume template built for jekyll
 
+### Testing Locally
+
+1. Install [rbenv](https://github.com/rbenv/rbenv) to manage Ruby versions.
+2. Install the required Ruby version:
+   ```
+   rbenv install 3.4.8
+   ```
+3. Set it for this project (already configured via `.ruby-version`):
+   ```
+   rbenv local 3.4.8
+   ```
+4. Install Bundler and dependencies:
+   ```
+   gem install bundler
+   bundle install
+   ```
+5. Start the local server:
+   ```
+   bundle exec jekyll serve
+   ```
+6. Open [http://localhost:4000](http://localhost:4000) in your browser.
+
 ### Installation
 
 Simply fork the repository and edit away.
