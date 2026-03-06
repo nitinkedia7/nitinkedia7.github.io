@@ -19,9 +19,9 @@ I graduated with a B.Tech. in Computer Science and Engineering from [IIT Guwahat
 ## Publications
 {% for pub in site.data.publications | sort: "order" %}
 
-**[{{ pub.title }}]({{ pub.url }})**  
+**[{{ pub.title }}]({{ pub.url }})**  [[PDF]({{ pub.pdf }}) {% if pub.code %}, [Code]({{ pub.code }}){% endif %}]    
 {{ pub.authors }}  
-{% if pub.type == "preprint" %}_Preprint_  {% elsif pub.venue %}*{{ pub.venue }}*  {% endif %}
-[PDF]({{ pub.pdf }}) / [Code]({{ pub.code }})
+{% if pub.type == "preprint" %}_Preprint'{{ pub.date | date: "%y" }}_  {% elsif pub.venue %}*{{ pub.venue }}*  {% endif %}
 
 {% endfor %}
+
